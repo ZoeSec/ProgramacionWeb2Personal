@@ -1,17 +1,29 @@
-let numero1= parseInt( prompt("Ingrese el primer numero:"));
-let numero2 = parseInt( prompt("Ingrese el segundo numero:"));
-let numero3 = parseInt(prompt("Ingrese el tercer numero: "));
+let num1 = Number(prompt("Ingresa el primer número"));
+let num2 = Number(prompt("Ingresa el segundo número"));
+let num3 = Number(prompt("Ingresa el tercer número"));
 
-console.log("Tus numeros son: " + numero1, " ", + numero2, " ", numero3);
+if (num1 === num2 && num2 === num3) {
+    alert("Los tres números son iguales");
+} else {
+    // Calcular el mayor
+    let mayor;
+    if (num1 >= num2 && num1 >= num3) {
+        mayor = num1;
+    } else if (num2 >= num1 && num2 >= num3) {
+        mayor = num2;
+    } else {
+        mayor = num3;
+    }
 
-if (numero1 == numero2 == numero3) {
-    console.log("Tus tres numeros son iguales");
+    // Calcular el menor
+    let menor;
+    if (num1 <= num2 && num1 <= num3) {
+        menor = num1;
+    } else if (num2 <= num1 && num2 <= num3) {
+        menor = num2;
+    } else {
+        menor = num3;
+    }
+
+    alert(`El número mayor es ${mayor} y el número menor es ${menor}`);
 }
-
-//encontrando el mayor
-
-// 1 mayor a los demas
-2 mayor
-3 mayor
-3 
- var mayor = numero1
